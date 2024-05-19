@@ -1,0 +1,54 @@
+<main
+  style="height: 100vh"
+  class="d-flex justify-content-center align-items-center flex-column"
+>
+  <mat-card class="container-sm">
+    <nav aria-label="breadcrumb" class="w-full d-flex float-start">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page" routerLink="/">
+          <a routerLink="/">Voltar</a>
+        </li>
+      </ol>
+    </nav>
+    <mat-card-title class="text-center">TESTE PEAK INVEST</mat-card-title>
+    <mat-card-content class="p-5">
+      <section class="d-flex flex-column">
+        <p class="text-center">
+          Desenvolver uma Tela de Consulta onde seja possível digitar um número
+          de 1 a 3 e ao clicar em buscar, o front-end faz uma requisição no
+          formato GET para a API no back-end.
+        </p>
+        <p class="text-center">
+          O back-end deve consultar por esse ID em uma lista KeyValuePair (ver
+          exemplo) e retornar para o front-end o nome encontrado.
+        </p>
+        <form
+          class="d-flex mt-4 flex-column"
+          [formGroup]="form"
+          (ngSubmit)="onSubmit()"
+        >
+          <mat-form-field>
+            <mat-label>Select</mat-label>
+            <mat-select formControlName="idUser">
+              <mat-option *ngFor="let user of userList" [value]="user.id">{{
+                user.id
+              }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <button
+            class="mt-3"
+            mat-raised-button
+            color="primary"
+            type="submit"
+            [disabled]="!form.valid"
+          >
+            Buscar
+          </button>
+        </form>
+      </section>
+    </mat-card-content>
+    <p class="fs-2 text-danger text-center" *ngIf="userNome != ''">
+      {{ userNome }}
+    </p>
+  </mat-card>
+</main>

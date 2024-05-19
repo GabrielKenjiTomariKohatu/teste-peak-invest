@@ -1,0 +1,12 @@
+C:\Users\Gabriel Kohatu\Desktop\teste-peak-invest\back\obj\Release\net8.0\PubTmp\Out\back.exe
+C:\Users\Gabriel Kohatu\Desktop\teste-peak-invest\back\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\Gabriel Kohatu\Desktop\teste-peak-invest\back\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\Gabriel Kohatu\Desktop\teste-peak-invest\back\obj\Release\net8.0\PubTmp\Out\back.dll
+C:\Users\Gabriel Kohatu\Desktop\teste-peak-invest\back\obj\Release\net8.0\PubTmp\Out\back.deps.json
+C:\Users\Gabriel Kohatu\Desktop\teste-peak-invest\back\obj\Release\net8.0\PubTmp\Out\back.runtimeconfig.json
+C:\Users\Gabriel Kohatu\Desktop\teste-peak-invest\back\obj\Release\net8.0\PubTmp\Out\back.pdb
+C:\Users\Gabriel Kohatu\Desktop\teste-peak-invest\back\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Gabriel Kohatu\Desktop\teste-peak-invest\back\obj\Release\net8.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\Gabriel Kohatu\Desktop\teste-peak-invest\back\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Gabriel Kohatu\Desktop\teste-peak-invest\back\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Gabriel Kohatu\Desktop\teste-peak-invest\back\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

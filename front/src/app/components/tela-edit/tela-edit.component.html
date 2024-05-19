@@ -1,0 +1,68 @@
+<main
+  style="height: 100vh"
+  class="d-flex justify-content-center align-items-center"
+>
+  <mat-card class="container-sm">
+    <nav aria-label="breadcrumb" class="w-full d-flex float-start">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page" routerLink="/">
+          <a routerLink="/">Voltar</a>
+        </li>
+      </ol>
+    </nav>
+    <mat-card-title class="text-center">TESTE PEAK INVEST</mat-card-title>
+    <mat-card-content class="p-5">
+      <section class="d-flex flex-column">
+        <p class="text-center">
+          Desenvolver uma Tela de Cadastro que tenha dois campos onde o usuário
+          possa digitar o valor para parcelas (short) e valor (decimal).
+        </p>
+        <p class="text-center">
+          Ao clicar em um botão Salvar, os dados devem ser enviados através de
+          uma requisição POST para a API no back-end que deve realizar o
+          seguinte cálculo: (valor * parcelas) + 5%.
+        </p>
+        <p class="text-center">
+          Após realizado o cálculo o resultado deve ser enviado novamente para o
+          front-end que deve exibir o valor no formato currency (ex: R$ 99,999).
+        </p>
+        <form
+          class="d-flex mt-4 flex-column"
+          [formGroup]="form"
+          (ngSubmit)="onSubmit()"
+        >
+          <mat-form-field class="example-full-width">
+            <mat-label>Valor</mat-label>
+            <input matInput formControlName="valor" required type="number" />
+            <mat-hint *ngIf="valor?.invalid && (valor?.dirty || valor?.touched)"
+              >Obrigatório</mat-hint
+            >
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Parcelas</mat-label>
+            <input matInput formControlName="parcelas" required type="number" />
+            <mat-hint
+              *ngIf="
+                parcelas?.invalid && (parcelas?.dirty || parcelas?.touched)
+              "
+              >Obrigatório</mat-hint
+            >
+          </mat-form-field>
+          <button
+            class="mt-3"
+            mat-raised-button
+            color="primary"
+            type="submit"
+            [disabled]="!form.valid"
+          >
+            Calcular
+          </button>
+        </form>
+      </section>
+    </mat-card-content>
+    <p class="fs-2 text-danger text-center" *ngIf="total != 0">
+      R$
+      {{ total }}
+    </p>
+  </mat-card>
+</main>
